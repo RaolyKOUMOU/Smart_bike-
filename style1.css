@@ -1,0 +1,106 @@
+/*Style liste*/
+
+/* Réinitialisation des paramètres par défaut */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+}
+
+/* Style du titre de la page */
+.page-title {
+    text-align: center;
+    font-size: 32px;
+    color: black;
+    margin: 20px 0;
+    font-weight: 700;
+}
+
+/* Conteneur principal avec une largeur maximale de 1200px, centré horizontalement */
+.container {
+    max-width: 1000px; /* Largeur maximale du conteneur */
+    margin: 0 auto; /* Centrer horizontalement le conteneur */
+    padding: 10px; /* Ajout d'un espace intérieur */
+}
+
+/* Style pour la disposition en ligne des éléments avec un espacement uniforme autour */
+.row {
+    display: flex; /* Utiliser le modèle de boîte flexible */
+    justify-content: space-around; /* Espacement uniforme des éléments autour */
+    margin: 15px 0; /* Marge en haut et en bas de la ligne */
+}
+
+/* Style pour chaque vélo avec une mise en forme, une ombre, une transition de transformation */
+.velo {
+    flex: 5px; /* Propriété de flexibilité */
+    margin: 10px; /* Marge autour du vélo */
+    background-color: white; /* Couleur de fond blanche */
+    border-radius: 50px; /* Coins arrondis */
+    padding: 5px; /* Espacement intérieur */
+    border: 20px solid black; /* Bordure noire épaisse */
+}
+
+/* Effet de survol pour agrandir légèrement le vélo */
+.velo:hover {
+    transform: scale(1.05); /* Agrandir légèrement au survol */
+}
+
+/* Style pour les images des vélos avec une largeur maximale de 100%, hauteur automatique et coins arrondis */
+.velo img {
+    max-width: 100%; /* Largeur maximale de l'image */
+    height: auto; /* Hauteur automatique pour maintenir le ratio */
+    border-radius: 10px; /* Coins arrondis de l'image */
+}
+
+/* Style pour le texte centré (titres, paragraphes et prix) à l'intérieur du vélo */
+.velo h2, .velo p, .velo .price {
+    text-align: center; /* Centrer le texte */
+    margin: 10px 0; /* Marge en haut et en bas du texte */
+}
+
+/* Style pour le bouton d'achat avec une largeur de 80%, centré horizontalement et mise en forme */
+.buy-button {
+    display: block; /* Afficher en tant que bloc */
+    width: 50%; /* Largeur du bouton */
+    margin: 20px auto; /* Marge autour du bouton, centré horizontalement */
+    background-color: green; /* Couleur de fond verte */
+    color: #fff; /* Couleur du texte blanc */
+    padding: 10px 30px; /* Espacement intérieur du bouton */
+    border-radius: 200px; /* Coins arrondis du bouton */
+    text-decoration: none; /* Pas de soulignement du texte */
+    text-align: center; /* Centrer le texte */
+}
+
+/* Effet de survol pour assombrir légèrement le bouton d'achat */
+.buy-button:hover {
+    background-color: #1e6b30; /* Assombrir légèrement au survol */
+}
+
+/* Style pour les écrans plus petits (jusqu'à 768px) où chaque vélo occupe 100% de la largeur */
+@media (max-width: 768px) {
+    .velo {
+        flex-basis: 100%; /* Les vélos occupent 100% de la largeur */
+    }
+}
+
+/* Style pour une autre section avec des images */
+.fo img {
+    width: 100%; /* Largeur de l'image à 100% du conteneur */
+    max-height: 300px; /* Ajustez la hauteur maximale selon vos besoins */
+    height: auto; /* Hauteur automatique pour maintenir le ratio */
+    object-fit: cover; /* Ajuster l'image pour couvrir entièrement la zone tout en conservant son ratio */
+}
+
+/* Style pour un texte positionné au centre sur une image avec une ombre */
+.veo {
+    position: absolute; /* Position absolue pour le texte */
+    top: 50%; /* Positionner au milieu verticalement */
+    left: 50%; /* Positionner au milieu horizontalement */
+    transform: translate(-50%, -50%); /* Centrer le texte sur l'image */
+    color: white; /* Couleur du texte */
+    font-size: 20px; /* Taille du texte */
+    font-weight: bold; /* Gras pour le texte */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Ombre pour le texte */
+    display: CENTER; /* Correction : la valeur correcte est 'center', pas 'CENTER' */
+}

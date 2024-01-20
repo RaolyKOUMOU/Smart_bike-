@@ -1,0 +1,103 @@
+/* <!--  style contact --> */
+
+/* Réglage du fond de la page */
+body {
+  background-color: white;
+}
+
+/* Style des champs de texte, zone de texte et champ d'email */
+input[type=text], textarea, input[type=email] {
+  width: 100%; /* Largeur de 100% */
+  padding: 12px; /* Remplissage intérieur de 12 pixels */
+  border: 1px solid #ccc; /* Bordure de 1 pixel solide avec couleur grise */
+  border-radius: 4px; /* Coins arrondis de 4 pixels */
+  box-sizing: border-box; /* La largeur inclut la bordure et le rembourrage */
+  margin-top: 6px; /* Marge en haut de 6 pixels */
+  margin-bottom: 16px; /* Marge en bas de 16 pixels */
+  resize: vertical; /* Redimensionnement vertical autorisé */
+}
+
+/* Style pour les étiquettes */
+label {
+  margin-right: 0px; /* Marge à droite de 0 pixels */
+  margin-left: 0px; /* Marge à gauche de 0 pixels */
+  width: 100%; /* Largeur de 100% */
+}
+
+/* Style pour le bouton de soumission */
+input[type=submit] {
+  background-color: green; /* Couleur de fond verte */
+  color: black; /* Couleur du texte noir */
+  padding: 12px 20px; /* Remplissage intérieur de 12 pixels en haut/bas, 20 pixels à gauche/droite */
+  border: none; /* Pas de bordure */
+  border-radius: 4px; /* Coins arrondis de 4 pixels */
+  cursor: pointer; /* Curseur de type pointeur au survol */
+}
+
+/* Style pour le conteneur principal */
+.container {
+  box-sizing: border-box; /* La largeur inclut la bordure et le rembourrage */
+  border-radius: 5px; /* Coins arrondis de 5 pixels */
+  background-color: white; /* Couleur de fond blanche */
+  padding: 20px; /* Remplissage intérieur de 20 pixels */
+  width: 100%; /* Largeur de 100% */
+  max-width: 440px; /* Largeur maximale de 440 pixels */
+  margin: 0 auto; /* Centrer horizontalement avec une marge automatique */
+}
+
+/* Style pour le titre principal */
+h1 {
+  color: black; /* Couleur du texte noir */
+  width: 100%; /* Largeur de 100% */
+}
+
+/* Effet de survol pour le bouton de soumission */
+input[type=submit]:hover {
+    background-color: #45a049; /* Couleur de fond légèrement modifiée au survol */
+}
+
+
+/* Style pour l'ensemble du corps de la page */
+body {
+    margin: 0; /* Réinitialiser la marge à zéro */
+    padding: 0; /* Réinitialiser le rembourrage à zéro */
+    font-family: 'Roboto', sans-serif; /* Utiliser la police Roboto ou une police sans empattement similaire */
+    background-color: white; /* Fond blanc */
+}
+
+/* Style pour les images à l'intérieur des éléments avec la classe 'fo' */
+.fo img {
+    width: 100%; /* Largeur de l'image à 100% du conteneur */
+    max-height: 900px; /* Hauteur maximale de l'image de 900 pixels */
+    height: auto; /* Hauteur automatique pour maintenir le ratio de l'image */
+    object-fit: cover; /* Ajuster l'image pour couvrir entièrement la zone tout en conservant son ratio */
+}
+
+/* Style pour les éléments avec la classe 'veo' */
+.veo {
+    position: absolute; /* Position absolue par rapport à son premier parent positionné */
+    top: 50%; /* Positionner au milieu verticalement par rapport au premier parent positionné */
+    left: 50%; /* Positionner au milieu horizontalement par rapport au premier parent positionné */
+    transform: translate(-50%, -50%); /* Centrer le texte sur l'image */
+    color: black; /* Couleur du texte noire */
+    font-size: 30px; /* Taille du texte de 30 pixels */
+    font-weight: bold; /* Gras pour le texte */
+    text-align: center; /* Centrer le texte horizontalement */
+    width: 100%; /* Largeur de 100% du conteneur parent */
+}
+
+/* Style pour les liens (ancre) à l'intérieur des éléments avec la classe 'veo' */
+.veo a {
+    text-decoration: none; /* Pas de soulignement du lien */
+    background: white; /* Fond blanc pour le lien */
+    color: black; /* Couleur du texte noire pour le lien */
+    padding: 10px 20px; /* Rembourrage intérieur de 10 pixels en haut/bas, 20 pixels à gauche/droite */
+    border-radius: 50px; /* Coins arrondis de 50 pixels */
+    margin-bottom: 200px; /* Marge en bas de 200 pixels */
+}
+
+/* Effet de survol pour les liens à l'intérieur des éléments avec la classe 'veo' */
+.veo a:hover {
+    color: gray; /* Couleur du texte gris au survol du lien */
+}
+
